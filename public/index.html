@@ -9,8 +9,22 @@
       name="Catasend Horeca"
       content="Enseña al mundo tus creaciones gastronómicas con menús dinámicos"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <meta property="og:title" content="Catasend Horeca" />
+    <meta property="og:image" content="https://horeca.catasend.com/logaCata.jpg" />
+    <meta
+      property="og:image:secure_url"
+      content="https://horeca.catasend.com/logaCata.jpg"
+    />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="500" />
+    <meta property="og:image:height" content="500" />
+    <meta
+      property="og:image:alt"
+      content="Logo Catasend Horeca"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logoCata.jpg" />
+
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -28,28 +42,25 @@
     <title>Catasend-horeca</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
-          }
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
         }
-      </script>
-      <style type="text/tailwindcss">
-        @layer utilities {
-          .content-auto {
-            content-visibility: auto;
-          }
-        }
-      </style>
+      }
+    </style>
   </head>
   <body>
-    
     <div id="root"></div>
-  
   </body>
-  
 </html>
