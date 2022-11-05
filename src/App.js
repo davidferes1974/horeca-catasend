@@ -340,7 +340,7 @@ export default function Example() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 pb-4">
             <img
               className="relative rounded-lg shadow-lg"
-              src="horecaP.webP"
+              src="horecaP.webp"
               alt="App screenshot"
             />
           </div>
