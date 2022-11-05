@@ -21,6 +21,50 @@ import {
 } from "@heroicons/react/24/outline";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
+const posts = [
+  {
+    title: 'Presenta menús en tiempo real.',
+    category: { name: 'Catering'},
+    description:
+      'Añade una experiencia única a tus clientes. informa de una manera visual y profesional de las características de las ofertas gastronómicas como son los alérgenos, ingredientes y otras especificaciones que harán una experiencia más óptima para tu clientela.',
+    imageUrl:
+      'catering.jpg',
+    author: {
+      name: 'Solicita una demo',
+      href: 'https://productos.catasend.com/demo-catasend',
+      
+    },
+  },
+  {
+    title: 'Enseña tu oferta gastronómica de forma fácil y profesional.',
+    category: { name: 'Restaurante'},
+    description:
+      'La innovación y la cocina nacen al mismo tiempo, cuando decidimos usar la tecnología para mejorar aquello que se tiene que comer. Mejorar la realidad y transformarla.',
+    imageUrl:
+      'restaurante.webp',
+    author: {
+      name: 'Solicita una demo',
+      href: 'https://productos.catasend.com/demo-catasend',
+    },
+  },
+  {
+    title: 'Mejora la experiencia de tus clientes.',
+    category: { name: 'Hoteles'},
+    description:
+      'Añade una experiencia superior a los eventos privados y de empresa. Informa directamente de los menús cambiando en tiempo real según el momento del día. Buffet, cóctail, aperitivo, almuerzo, cenas, sugerencias según mercado, etc. Potencia tu oferta disponible en cada momento.',
+    date: 'Feb 12, 2020',
+    datetime: '2020-02-12',
+    imageUrl:
+      'Hoteles1.webp',   
+    author: {
+      name: 'Solicita una demo',
+      href: 'https://productos.catasend.com/demo-catasend',
+      
+    },
+  },
+]
+
+
 const faqs = [
   {
     question: "¿Cómo creo un producto nuevo?",
@@ -275,49 +319,34 @@ export default function Example() {
         </Popover>
 
         <main className="lg:relative">
-          <div className="mx-auto w-full max-w-7xl pt-16 pb-20 text-center lg:py-48 lg:text-left">
-            <div className="px-4 sm:px-8 lg:w-1/2 xl:pr-16">
-              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
-                <span className="block xl:inline">
-                  Sorprende a tus clientes
-                </span>{" "}
-                <span className="block text-indigo-600 xl:inline">
-                  compartiendo tus creaciones
-                </span>
+        <div class="mx-auto mt-16 max-w-7xl px-4 sm:mt-24 sm:px-6">
+            <div class="text-center">
+              <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
+                <span class="block">Sorprende a tus clientes </span>
+                <span class="block text-teal-600 ">Innova potenciando tu negocio</span>
               </h1>
-              <p className="mx-auto mt-3 max-w-md text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
-                De una forma sencilla podrás enviar tus creaciones gastronómicas
-                con catálogos dinámicos que cambian en tiempo real. Podrás
-                adaptarte a los cambios de menús y productos de temporada
-                mostrándolos de forma profesional.
+              <p class="mx-auto mt-3 max-w-md text-base text-gray-500 sm:text-lg md:mt-5 md:max-w-3xl md:text-xl">
+                Mejora su experiencia gastronómicas de una forma fácil y rápida.
               </p>
-              <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
-                <div className="rounded-md shadow">
-                  <a
-                    href="https://productos.catasend.com/alta-nueva"
-                    className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 md:py-4 md:px-10 md:text-lg"
-                  >
-                    Pruébalo gratis
-                  </a>
-                </div>
-                <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-                  <a
-                    href="https://productos.catasend.com/demo-catasend"
-                    className="flex w-full items-center justify-center rounded-md border border-transparent bg-white px-8 py-3 text-base font-medium text-indigo-600 hover:bg-gray-50 md:py-4 md:px-10 md:text-lg"
-                  >
-                    Solicita demo
-                  </a>
-                </div>
-              </div>
             </div>
+            <div class="mx-auto mt-2 max-w-2xl px-2 sm:mt-4 sm:px-2"></div>
           </div>
-          <div className="relative h-64 w-full sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:h-full lg:w-1/2">
+        
+        <div className="relative">
+          <div className="absolute inset-0 flex flex-col" aria-hidden="true">
+            <div className="flex-1" />
+            <div className="w-full flex-1 bg-gradient-to-r from-gray-400 via-slate-100 to-gray-500" />
+          </div>
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 pb-4">
             <img
-              className="absolute inset-0 h-full w-full object-cover"
-              src="horecaP.webp"
-              alt=""
+              className="relative rounded-lg shadow-lg"
+              src="horecaP.webP"
+              alt="App screenshot"
             />
           </div>
+        </div>
+          
+          
         </main>
       </div>
       <div className="overflow-hidden bg-gray-50">
@@ -361,7 +390,7 @@ export default function Example() {
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                 La mejor manera de
               </h2>
-              <h2 className="text-3xl font-bold tracking-tight text-indigo-600 sm:text-4xl">
+              <h2 className="text-3xl font-bold tracking-tight text-teal-600 sm:text-4xl">
                 sorprender a los clientes
               </h2>
             </div>
@@ -369,7 +398,7 @@ export default function Example() {
               {features.map((feature) => (
                 <div key={feature.name}>
                   <dt>
-                    <div className="flex h-12 w-12 items-center justify-center rounded-md bg-indigo-500 text-white">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-md bg-teal-600 hover:text-teal-400 text-white">
                       <feature.icon className="h-6 w-6" aria-hidden="true" />
                     </div>
                     <p className="mt-5 text-lg font-medium leading-6 text-gray-900">
@@ -384,56 +413,83 @@ export default function Example() {
             </dl>
           </div>
         </div>
-        <div>
-          <div class="mx-auto mt-16 max-w-7xl px-4 sm:mt-24 sm:px-6">
-            <div class="text-center">
-              <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
-                <span class="block">Potencia tu negocio </span>
-                <span class="block text-indigo-600">con + visibilidad</span>
-              </h1>
-              <p class="mx-auto mt-3 max-w-md text-base text-gray-500 sm:text-lg md:mt-5 md:max-w-3xl md:text-xl">
-                Proyecta y envía tus propuestas gastronómicas de una forma fácil
-                y rápida.
-              </p>
-            </div>
-            <div class="mx-auto mt-2 max-w-2xl px-2 sm:mt-4 sm:px-2"></div>
-          </div>
-          <div class="relative">
-            <div class="absolute inset-0 flex flex-col" aria-hidden="true">
-              <div class="flex-1"></div>
-              <div class="w-full flex-5 bg-gray-100"></div>
-            </div>
-            <div class="mx-auto max-w-4xl px-4 sm:px-6">
-              <img
-                class="relative rounded-lg shadow-lg"
-                src="horeca8.jpg"
-                alt="App screenshot"
-              />
-            </div>
-          </div>
-        </div>
+        <div className="relative bg-gradient-to-r from-gray-400 via-slate-100 to-gray-500 px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pt-24 lg:pb-28">
+      <div className="absolute inset-0">
+        <div className="h-1/3 bg-white sm:h-2/3" />
       </div>
-      <div class="relative bg-white py-16 sm:py-24 lg:py-32">
-        <div class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
-          <h2 class="text-lg font-semibold text-indigo-600">
-            Actualiza las ofertas en tiempo real
+      <div className="relative mx-auto max-w-7xl">
+        <div className="text-center">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Desde el corazón del negocio</h2>
+          <p className="mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4">
+            Impulsa las ventas mejorando la experiencia de tus clientes.
+          </p>
+        </div>
+        <div className="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
+          {posts.map((post) => (
+            <div key={post.title} className="flex flex-col overflow-hidden rounded-lg shadow-lg">
+              <div className="flex-shrink-0">
+                <img className="h-48 w-full object-cover" src={post.imageUrl} alt="" />
+              </div>
+              <div className="flex flex-1 flex-col justify-between bg-white p-6">
+                <div className="flex-1">
+                  <p className="text-sm font-medium text-teal-600">
+                    <a>
+                      {post.category.name}
+                    </a>
+                  </p>
+                  <a className="mt-2 block">
+                    <p className="text-xl font-semibold text-gray-900">{post.title}</p>
+                    <p className="mt-3 text-base text-gray-500">{post.description}</p>
+                  </a>
+                </div>
+                <div className="mt-6 flex items-center">
+                  
+                  <div className="ml-3">
+                    <p className="text-sm font-medium text-gray-900">
+                      <a href={post.author.href} className="hover:underline hover:text-teal-600" fill="none" viewBox="0 0 24 24">
+                        {post.author.name}
+                      </a>
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        
+      </div>
+    </div>
+      </div>
+     
+      <div class="relative bg-white py-16 sm:py-4 lg:py-14">
+      <div className="mx-auto max-w-3xl px-4 sm:px-6 pb-4">
+            <img
+              className="relative rounded-lg shadow-lg"
+              src="coctail.webP"
+              alt="App screenshot"
+            />
+          </div>
+        <div class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8 ">
+          <h2 class="text-lg font-bold text-teal-600 pt-6">
+            ¿Nuevo cóctel? 
+          </h2>
+          <h2 class="text-lg font-semibold text-teal-600">
+            Un par de clicks y listo para ofertar.
           </h2>
           <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Desde donde quieras y cuando quieras
           </p>
-          <p class="mx-auto mt-5 max-w-prose text-xl text-gray-500">
-            Tecnología desarrollada en la nube para dar mayor rapidez de
-            respuesta y seguridad .
-          </p>
+         
           <div class="mt-12">
-            <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <div class="">
               <div class="pt-6">
                 <div class="flow-root rounded-lg bg-gray-50 px-6 pb-8">
                   <div class="-mt-6">
                     <div>
-                      <span class="inline-flex items-center justify-center rounded-md bg-indigo-500 p-3 shadow-lg">
+                      <span class="inline-flex items-center justify-center rounded-md bg-teal-500 p-3 shadow-lg">
                         <svg
-                          class="h-6 w-6 text-white"
+                          class="h-10 w-10 text-white"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
@@ -447,76 +503,18 @@ export default function Example() {
                         </svg>
                       </span>
                     </div>
-                    <h3 class="mt-8 text-lg font-medium tracking-tight text-gray-900">
-                      Directo a la nube
+                    <h3 class="mt-6 text-lg font-medium tracking-tight text-gray-900">
+                      Rápido y dinámico
                     </h3>
-                    <p class="mt-5 text-base text-gray-500">
-                      Visible desde donde quieras y cuando quieras
-                    </p>
+                    <p class="mx-auto mt-5 max-w-prose text-xl text-gray-500">
+            Tecnología desarrollada en la nube para dar mayor rapidez de
+            respuesta a los cambios. 
+          </p>
                   </div>
                 </div>
               </div>
 
-              <div class="pt-6">
-                <div class="flow-root rounded-lg bg-gray-50 px-6 pb-8">
-                  <div class="-mt-6">
-                    <div>
-                      <span class="inline-flex items-center justify-center rounded-md bg-indigo-500 p-3 shadow-lg">
-                        <svg
-                          class="h-6 w-6 text-white"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
-                          />
-                        </svg>
-                      </span>
-                    </div>
-                    <h3 class="mt-8 text-lg font-medium tracking-tight text-gray-900">
-                      Certificado SSL
-                    </h3>
-                    <p class="mt-5 text-base text-gray-500">
-                      Seguridad en el envío de datos.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="pt-6">
-                <div class="flow-root rounded-lg bg-gray-50 px-6 pb-8">
-                  <div class="-mt-6">
-                    <div>
-                      <span class="inline-flex items-center justify-center rounded-md bg-indigo-500 p-3 shadow-lg">
-                        <svg
-                          class="h-6 w-6 text-white"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        >
-                          {" "}
-                          <ellipse cx="12" cy="5" rx="9" ry="3" />{" "}
-                          <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />{" "}
-                          <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
-                        </svg>
-                      </span>
-                    </div>
-                    <h3 class="mt-8 text-lg font-medium tracking-tight text-gray-900">
-                      Database Backups
-                    </h3>
-                    <p class="mt-5 text-base text-gray-500">
-                      Copias automáticas de todos tus archivos.
-                    </p>
-                  </div>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>
@@ -583,7 +581,7 @@ export default function Example() {
                   </span>
                   <span className="mt-1 block text-4xl font-bold tracking-tight sm:text-5xl xl:text-6xl">
                     <span className="block text-gray-900">Menús dinámicos</span>
-                    <span className="block text-indigo-600">
+                    <span className="block text-teal-600">
                       Gastronomía viva
                     </span>
                   </span>
@@ -605,7 +603,7 @@ export default function Example() {
               <div class="pt-12 sm:pt-16 lg:pt-20">
                 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                   <div class="text-center">
-                    <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl">
+                    <h2 class="text-3xl font-bold tracking-tight text-teal-600 sm:text-4xl lg:text-5xl">
                       Impulsa tus ventas
                     </h2>
                     <p class="mt-4 text-xl text-gray-600">
@@ -621,7 +619,7 @@ export default function Example() {
                   <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div class="mx-auto max-w-lg overflow-hidden rounded-lg shadow-lg lg:flex lg:max-w-none">
                       <div class="flex-1 bg-white px-6 py-8 lg:p-12">
-                        <h3 class="text-2xl font-bold text-indigo-600 sm:text-3xl sm:tracking-tight">
+                        <h3 class="text-2xl font-bold text-teal-600 sm:text-3xl sm:tracking-tight">
                           Sistema de pago mensual
                         </h3>
                         <p class="mt-6 text-base text-gray-500">
@@ -630,7 +628,7 @@ export default function Example() {
                         </p>
                         <div class="mt-8">
                           <div class="flex items-center">
-                            <h4 class="flex-shrink-0 bg-white pr-4 text-base font-semibold text-indigo-600">
+                            <h4 class="flex-shrink-0 bg-white pr-4 text-base font-semibold text-teal-600">
                               ¿Qué incluye?
                             </h4>
                             <div class="flex-1 border-t-2 border-gray-200"></div>
@@ -642,7 +640,7 @@ export default function Example() {
                             <li class="flex items-start lg:col-span-1">
                               <div class="flex-shrink-0">
                                 <svg
-                                  class="h-5 w-5 text-green-400"
+                                  class="h-5 w-5 text-teal-400"
                                   xmlns="http://www.w3.org/2000/svg"
                                   viewBox="0 0 20 20"
                                   fill="currentColor"
@@ -663,7 +661,7 @@ export default function Example() {
                             <li class="flex items-start lg:col-span-1">
                               <div class="flex-shrink-0">
                                 <svg
-                                  class="h-5 w-5 text-green-400"
+                                  class="h-5 w-5 text-teal-400"
                                   xmlns="http://www.w3.org/2000/svg"
                                   viewBox="0 0 20 20"
                                   fill="currentColor"
@@ -684,7 +682,7 @@ export default function Example() {
                             <li class="flex items-start lg:col-span-1">
                               <div class="flex-shrink-0">
                                 <svg
-                                  class="h-5 w-5 text-green-400"
+                                  class="h-5 w-5 text-teal-400"
                                   xmlns="http://www.w3.org/2000/svg"
                                   viewBox="0 0 20 20"
                                   fill="currentColor"
@@ -705,7 +703,7 @@ export default function Example() {
                             <li class="flex items-start lg:col-span-1">
                               <div class="flex-shrink-0">
                                 <svg
-                                  class="h-5 w-5 text-green-400"
+                                  class="h-5 w-5 text-teal-400"
                                   xmlns="http://www.w3.org/2000/svg"
                                   viewBox="0 0 20 20"
                                   fill="currentColor"
@@ -729,21 +727,24 @@ export default function Example() {
                         <p class="text-lg font-medium leading-6 text-gray-900">
                           Tarifa Inicio
                         </p>
-                        <div class="mt-4 flex items-center justify-center text-5xl font-bold tracking-tight text-indigo-600">
+                        <div class="mt-4 flex items-center justify-center text-5xl font-bold tracking-tight text-teal-600">
                           <span>49€</span>
-                          <span class="ml-3 text-xl font-medium tracking-normal text-indigo-600">
+                          <span class="ml-3 text-xl font-medium tracking-normal text-teal-600">
                             mes
                           </span>
                         </div>
 
                         <div class="mt-6">
-                          <div class="rounded-md shadow">
-                            <a
-                              href="https://productos.catasend.com/alta-nueva"
-                              class="flex items-center justify-center rounded-md border border-transparent bg-gray-800 px-5 py-3 text-base font-medium text-white hover:bg-gray-900"
-                            >
-                              Empezar
-                            </a>
+                          <div class="">
+                          <a href="https://productos.catasend.com/demo-catasend" class="group block max-w-xs mx-auto rounded-lg p-6 bg-white ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:bg-teal-600 hover:ring-teal-500">
+  <div class="flex items-center">
+    <svg class="h-6 w-6 stroke-sky-500 group-hover:stroke-white" fill="none" viewBox="0 0 24 24"></svg>
+    <h3 class="block h-auto w-full font-bold group-hover:text-white ">
+                Solicita una demo
+              </h3>
+  </div>
+  <p class="text-slate-500 group-hover:text-white text-sm">Hecemos una demo y luego tendrás 15 días de prueba sin ningún compromiso.</p>
+</a>
                           </div>
                         </div>
                         <div class="mt-4 text-sm">
@@ -768,9 +769,9 @@ export default function Example() {
           <div id="faqs" className="mx-auto max-w-3xl divide-y-2 divide-gray-200">
             <div class="flex flex-col items-center">
               <a>
-                <img class="block h-auto w-full" src="faqs.jpg" alt="faqs" />
+                <img class="block h-auto w-full" src="faqsGreen.jpg" alt="faqs" />
               </a>
-              <h2 class="flex-shrink-0  pr-4 text-2xl font-semibold text-indigo-600">
+              <h2 class="flex-shrink-0  pr-4 text-2xl font-semibold text-black">
                 Preguntas frecuentes
               </h2>
               <div class="flex-1 border-t-2 border-gray-200"></div>
@@ -811,10 +812,10 @@ export default function Example() {
       <div className="bg-white">
         <div className="mx-auto max-w-7xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-lg font-semibold text-indigo-600">
-              Personaliza al 100%
+            <h2 className="text-lg font-semibold text-black">
+              Personalizable 100%
             </h2>
-            <p className="mt-1 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
+            <p className="mt-1 text-4xl font-bold tracking-tight text-teal-600 sm:text-5xl lg:text-6xl">
               Una solución para cada tipo de negocio.
             </p>
             <p className="mx-auto mt-5 max-w-xl text-xl text-gray-500">
@@ -827,7 +828,7 @@ export default function Example() {
           <div className="relative">
           <div className="absolute inset-0 flex flex-col " aria-hidden="true">
             <div className="flex-1 " />
-            <div className="w-full flex-1 bg-gray-100" />
+            <div className="w-full flex-1 bg-gradient-to-r from-gray-400 via-slate-100 to-gray-500 px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pt-24 lg:pb-28" />
           </div>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 pb-6">
             <img
