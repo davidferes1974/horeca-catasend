@@ -24,7 +24,7 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 const posts = [
   {
     title: 'Presenta menús en tiempo real.',
-    category: { name: 'Catering'},
+    category: { name: 'Cocina de mercado'},
     description:
       'Añade una experiencia única a tus clientes. informa de una manera visual y profesional de las características de las ofertas gastronómicas como son los alérgenos, ingredientes y otras especificaciones que harán una experiencia más óptima para tu clientela.',
     imageUrl:
@@ -37,7 +37,7 @@ const posts = [
   },
   {
     title: 'Enseña tu oferta gastronómica de forma fácil y profesional.',
-    category: { name: 'Restaurante'},
+    category: { name: 'Sugerencias'},
     description:
       'La innovación y la cocina nacen al mismo tiempo, cuando decidimos usar la tecnología para mejorar aquello que se tiene que comer. Mejorar la realidad y transformarla.',
     imageUrl:
@@ -49,7 +49,7 @@ const posts = [
   },
   {
     title: 'Mejora la experiencia de tus clientes.',
-    category: { name: 'Hoteles'},
+    category: { name: 'Menús cerrados'},
     description:
       'Añade una experiencia superior a los eventos privados y de empresa. Informa directamente de los menús cambiando en tiempo real según el momento del día. Buffet, cóctail, aperitivo, almuerzo, cenas, sugerencias según mercado, etc. Potencia tu oferta disponible en cada momento.',
     date: 'Feb 12, 2020',
