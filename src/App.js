@@ -466,7 +466,7 @@ export default function Example() {
       <div className="mx-auto max-w-3xl px-4 sm:px-6 pb-4">
             <img
               className="relative rounded-lg shadow-lg"
-              src="coctail.webP"
+              src="coctail.webp"
               alt="App screenshot"
             />
           </div>
