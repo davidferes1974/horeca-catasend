@@ -178,7 +178,7 @@ export default function Example() {
                 <a href="#">
                   <span className="sr-only">Catasend-Horeca</span>
                   <img
-                    className="h-12 w-auto sm:h-14"
+                    className="h-8 w-auto sm:h-8"
                     src="cataHorecaLogo.jpg"
                     alt=""
                   />
@@ -325,9 +325,24 @@ export default function Example() {
                 <span class="block">Sorprende a tus clientes </span>
                 <span class="block text-teal-600 ">Innova potenciando tu negocio</span>
               </h1>
-              <p class="mx-auto mt-3 max-w-md text-base text-gray-500 sm:text-lg md:mt-5 md:max-w-3xl md:text-xl">
-                Mejora su experiencia gastronómicas de una forma fácil y rápida.
-              </p>
+              <div className="mx-auto mt-5 max-w-md sm:flex pb-8 sm:justify-center md:mt-8">
+              <div className="rounded-md shadow">
+                <a
+                  href="#precios"
+                  className="flex w-full items-center justify-center rounded-md border border-transparent bg-teal-600 px-8 py-3 text-base font-medium text-white hover:bg-white hover:text-black md:py-4 md:px-10 md:text-lg"
+                >
+                  Empieza gratis
+                </a>
+              </div>
+              <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
+                <a
+                  href="#precios"
+                  className="flex w-full items-center justify-center rounded-md border border-teal-600 bg-white px-8 py-3 text-base font-medium text-teal-600 hover:bg-gray-50 md:py-4 md:px-10 md:text-lg"
+                >
+                  Solicita demo
+                </a>
+              </div>
+            </div>
             </div>
             <div class="mx-auto mt-2 max-w-2xl px-2 sm:mt-4 sm:px-2"></div>
           </div>
@@ -337,7 +352,7 @@ export default function Example() {
             <div className="flex-1" />
             <div className="w-full flex-1 bg-gradient-to-r from-gray-400 via-slate-100 to-gray-500" />
           </div>
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 pb-4">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 pb-6">
             <img
               className="relative rounded-lg shadow-lg"
               src="horecaP.webp"
