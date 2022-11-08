@@ -331,12 +331,12 @@ export default function Example() {
                   href="#precios"
                   className="flex w-full items-center justify-center rounded-md border border-transparent bg-teal-600 px-8 py-3 text-base font-medium text-white hover:bg-white hover:text-black md:py-4 md:px-10 md:text-lg"
                 >
-                  Empieza gratis
+                  Empieza ahora
                 </a>
               </div>
               <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
                 <a
-                  href="#precios"
+                  href="https://www.catasend.com/#contacto"
                   className="flex w-full items-center justify-center rounded-md border border-teal-600 bg-white px-8 py-3 text-base font-medium text-teal-600 hover:bg-gray-50 md:py-4 md:px-10 md:text-lg"
                 >
                   Solicita demo
@@ -487,7 +487,7 @@ export default function Example() {
           </div>
         <div class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8 ">
           <h2 class="text-lg font-bold text-teal-600 pt-6">
-            ¿Nuevo cóctel? 
+            ¿Nueva carta? 
           </h2>
           <h2 class="text-lg font-semibold text-teal-600">
             Un par de clicks y listo para ofertar.
@@ -622,8 +622,7 @@ export default function Example() {
                       Impulsa tus ventas
                     </h2>
                     <p class="mt-4 text-xl text-gray-600">
-                      Prueba 15 días grátis sin compromiso ni registro de
-                      tarjeta.
+                      Oferta por tiempo limitado. Esta tarifa se aplicá para siempre una vez tengas el alta activa.
                     </p>
                   </div>
                 </div>
@@ -740,10 +739,13 @@ export default function Example() {
                       </div>
                       <div class="bg-gray-50 py-8 px-6 text-center lg:flex lg:flex-shrink-0 lg:flex-col lg:justify-center lg:p-12">
                         <p class="text-lg font-medium leading-6 text-gray-900">
-                          Tarifa Inicio
+                          Tarifa Inicio:
+                        </p>
+                        <p class="text-lg font-medium leading-6 text-gray-900 line-through">
+                          49€/mes
                         </p>
                         <div class="mt-4 flex items-center justify-center text-5xl font-bold tracking-tight text-teal-600">
-                          <span>49€</span>
+                          <span>19,90€</span>
                           <span class="ml-3 text-xl font-medium tracking-normal text-teal-600">
                             mes
                           </span>
@@ -751,22 +753,22 @@ export default function Example() {
 
                         <div class="mt-6">
                           <div class="">
-                          <a href="https://productos.catasend.com/demo-catasend" class="group block max-w-xs mx-auto rounded-lg p-6 bg-white ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:bg-teal-600 hover:ring-teal-500">
+                          <a href="https://buy.stripe.com/00gfZ2eU4bYK0yQeUV" class="group block max-w-xs mx-auto rounded-lg p-6 bg-white ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:bg-teal-600 hover:ring-teal-500">
   <div class="flex items-center">
     <svg class="h-6 w-6 stroke-sky-500 group-hover:stroke-white" fill="none" viewBox="0 0 24 24"></svg>
-    <h3 class="block h-auto w-full font-bold group-hover:text-white ">
-                Solicita una demo
-              </h3>
+    <h2 class="block h-auto w-full font-bold group-hover:text-white ">
+                ¡Empieza ya!
+              </h2>
   </div>
-  <p class="text-slate-500 group-hover:text-white text-sm">Hecemos una demo y luego tendrás 15 días de prueba sin ningún compromiso.</p>
+  <p class="text-slate-500 group-hover:text-white text-sm">Plataforma de pago segura con <a className="font-bold">Stripe</a></p>
 </a>
                           </div>
                         </div>
                         <div class="mt-4 text-sm">
                           <a class="font-medium text-gray-900">
-                            Tarifas personalizadas
+                            *Precio
                             <span class="font-normal text-gray-500">
-                              (Consultar)
+                              (sin impuestos)
                             </span>
                           </a>
                         </div>
